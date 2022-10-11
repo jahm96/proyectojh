@@ -1,20 +1,15 @@
 import React from 'react'
-import {Navbar} from './components/Navbar/Navbar';
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
-import 'boxicons';
 
+import 'boxicons';
+import {Routes, Route} from 'react-router-dom';
+import Page from '../src/components/Paginas/Page';
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <ItemListContainer />
-	
-    
-      
-      
-    </div>
+    <Routes>
+      <Route path='/gay' element={<Page/>}></Route>
+    </Routes>
   );
 }
 
