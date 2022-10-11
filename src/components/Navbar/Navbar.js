@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../images/logo.jpg'
 
 export const Navbar = () => {
@@ -12,10 +13,10 @@ export const Navbar = () => {
             </a>
             <ul>
                 <li>
-                    <a href='#'>Inicio</a>
+                    <Link to='/'>Inicio</Link>
                 </li>
                 <li>
-                    <a href='#'>Producto</a>
+                    <Link to='/productos'>Producto</Link>
                 </li>
             </ul>
             <div className='cart'>
